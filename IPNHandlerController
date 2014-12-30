@@ -1,0 +1,34 @@
+public class IPNHandlerController {
+
+    public PageReference myIPNupdate() {
+     try{
+        PageReference pageRef = ApexPages.currentPage();
+        //Get the value of the 'custom' parameter from current page
+        String paramCustom = pageRef.getParameters().get('custom');
+        opportunity = [select Id,paid__c from Opportunity where FormAssemblyID__c = :paramCustom ];
+
+        String content = '';
+        for(String key : pageRef.getParameters().keySet()){
+            //Note that there is no guarantee of order in the parameter key map.
+            content += key + ' : ' + pageRef.getParameters().get(key) + '\n';
+        }
+        opportunity.PayPalInfo__c = content;
+        opportunity.paid__c = True;
+        update opportunity;
+
+        PageReference newPage = new ApexPages.StandardController(opportunity).view();
+        newPage.setRedirect(true);        
+
+        return newPage;
+     } catch (System.Exception e){
+         //A failure occurred
+         system.debug(e);
+         return null;
+     }
+    }
+
+    public Opportunity opportunity {get; set;}
+
+    public IPNHandlerController() {
+    }
+}
