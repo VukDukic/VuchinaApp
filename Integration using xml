@@ -1,0 +1,174 @@
+public class postToJobsCentral {
+
+public String xmlOutput {get;set;}
+public String postResponse {get;set;}
+
+public postToJobsCentral() {
+createJobXML();
+}
+
+public PageReference createJobXML() {
+// XML Start
+XmlStreamWriter xmlWriter = new XmlStreamWriter();
+xmlWriter.writeStartDocument('utf-8', '1.0');
+
+xmlWriter.writeStartElement(NULL, 'Job', NULL);
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBVendorID');
+xmlWriter.writeAttribute(null, null, 'value', 'ED3H3MG5WM50GQP729GL');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBReplace');
+xmlWriter.writeAttribute(null, null, 'value', 'No');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBReplyTo');
+xmlWriter.writeAttribute(null, null, 'value', 'yata@r.recruit.co.jp');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBOrigin');
+xmlWriter.writeAttribute(null, null, 'value', 'Job Posting Entity');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBAction');
+xmlWriter.writeAttribute(null, null, 'value', 'ADD');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBApplyURL');
+xmlWriter.writeAttribute(null, null, 'value', 'http://jobs.rgf-hr.com.sg/job/Singapore-Customer-Service-Super%2C-Personal-Care-Job/2474190/?feedId=1821utm_source=JobCentral');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBCity');
+xmlWriter.writeAttribute(null, null, 'value', 'Singapore');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBName');
+xmlWriter.writeAttribute(null, null, 'value', 'RGF is the global brand of Recruit Holdings Co., Ltd., the world\'s 4th largest HR and recruitment services company and the largest in Japan. With an extensive reach of 25 offices across 10 countries, we deliver timely end-to-end recruitment solutions across industries and functions. EA License: 10C2978');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBContactComapny');
+xmlWriter.writeAttribute(null, null, 'value', 'RGF Singapore');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBContactEmail');
+xmlWriter.writeAttribute(null, null, 'value', 'muto@rgf-hragent.asia');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBCountry');
+xmlWriter.writeAttribute(null, null, 'value', 'SG');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBCustAcctCode');
+xmlWriter.writeAttribute(null, null, 'value', '');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBDescription');
+xmlWriter.writeAttribute(null, null, 'value', '<b>Job Title:</b>Customer Service Super<br/><b>Job Number:</b>JO-1303-34654<br/><b>Industry:</b>Consumer/Retail/Personal Care<br/><b>Job Category/Function:</b>Business Operations/Customer Service/Customer Support/Call Center<br/><b>Salary:</b>SGD 3000.00 - 4000.00<br/><br><b><b>JOB DESCRIPTION<br><br></b></b><b>A Japanese company in the consumer service industry is seeking for an experienced individual who is able to improve and manage the service level of the 15 outlets across Singapore and Malaysia.<br></b><br><br><b><b>REQUIREMENTS<br><br></b></b><b>minimum 3 years of experince in the customer service/consumer/retail industry.</b>');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBDisplayCity');
+xmlWriter.writeAttribute(null, null, 'value', 'Singapore');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBDisplayJobID');
+xmlWriter.writeAttribute(null, null, 'value', 'JO-1303-34654');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBDivision');
+xmlWriter.writeAttribute(null, null, 'value', 'JP Select');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBEmployeeType');
+xmlWriter.writeAttribute(null, null, 'value', 'Full-Time');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBMinExperience');
+xmlWriter.writeAttribute(null, null, 'value', '3');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBUserJobID');
+xmlWriter.writeAttribute(null, null, 'value', 'JO-1303-34654');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBJobTitle');
+xmlWriter.writeAttribute(null, null, 'value', 'Customer Service Super, Personal Care');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBJobTypeCode');
+xmlWriter.writeAttribute(null, null, 'value', 'JN002, JN162, JN001, JN142');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBRequirements');
+xmlWriter.writeAttribute(null, null, 'value', '');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBShowCompany');
+xmlWriter.writeAttribute(null, null, 'value', 'Yes');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBShowFax');
+xmlWriter.writeAttribute(null, null, 'value', 'No');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBShowName');
+xmlWriter.writeAttribute(null, null, 'value', 'No');
+xmlWriter.writeEndElement();
+
+xmlWriter.writeStartElement(NULL, 'Field', NULL);
+xmlWriter.writeAttribute(null, null, 'name', 'CBShowPhone');
+xmlWriter.writeAttribute(null, null, 'value', 'No');
+xmlWriter.writeEndElement();
+
+this.xmlOutput = xmlWriter.getXmlString();
+
+xmlWriter.close();
+
+return null;
+}
+
+public PageReference postJob() {
+HttpRequest req = new HttpRequest();
+HttpResponse res = new HttpResponse();
+Http http = new Http();
+
+req.setEndpoint('http://dpi.careerbuilder.com/webservices/dpitg.aspx');
+req.setMethod('POST');
+req.setHeader('Content-Type', 'application/xml');
+//req.setBody(this.xmlOutput);
+req.setBodyAsBlob(Blob.valueOf(this.xmlOutput));
+//req.setCompressed(true);
+
+Try {
+res = http.send(req);
+this.postResponse = res.toString() + ' : ' + res.getBody();
+} Catch (Exception e) {
+this.postResponse = 'Error: ' + e.getMessage();
+}
+
+return null;
+}
+}
